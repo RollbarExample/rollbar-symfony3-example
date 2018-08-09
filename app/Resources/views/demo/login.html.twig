@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Error</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <div class="container">
+            <r><br><br><br>
+            <div class="col-sm-8">
+                <h1>Click on Button Now</h1>
+                <br><br>
+                <form action="{{ path('submit') }}" method="post"> 
+                    <input type="text" class="form-control" name="username" placeholder="Enter your Username" required=""> 
+                    <input type="text" class="form-control" name="password" placeholder="Enter your Password" required=""> 
+                    <input type="submit" value="Generate Error" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

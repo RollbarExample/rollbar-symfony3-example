@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Error</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <style>
+    .mainContainer{
+        background-color:#71CF95;
+        margin: 10px;
+        height:;
+    }
+    </style>
+    <body>
+        <div class="col-sm-15 mainContainer ">
+            <center>
+            <img src="{{ asset('/symfony_logo.png')}}" width="20%" height="20%" alt="Symfony Logo" >
+            <h3><i>Rollbar Symfony3 Example</i></h3>
+            <br><br>
+            <a href="{{ path('caught') }}" >
+                <input type="submit" value="Generate Caught Error" class="btn btn-primary">
+            </a>&nbsp;&nbsp;          
+            <a href="{{ path('uncaught') }}" >
+                <input type="submit" value="Generate an Uncaught Error" class="btn btn-danger">
+            </a>
+            <br><br>
+        </div>
+    </body>
+</html>
